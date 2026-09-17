@@ -1,7 +1,7 @@
 # Wilma
 **AI-Powered Sari-Sari Store Inventory Predictor**
 
-Wilma is a full-stack web application built for **CCS112**, designed to help sari-sari store owners manage their inventory, prevent stockouts, and make data-driven purchasing decisions. Instead of relying on static formulas, Wilma features a **True Machine Learning Deep Neural Network** that trains on historical sales data to accurately predict future stock velocity.
+Wilma is a full-stack web application designed to help sari-sari store owners manage their inventory, prevent stockouts, and make data-driven purchasing decisions. Instead of relying on static formulas, Wilma features a **Deep Neural Network** that trains on historical sales data to accurately predict future stock velocity.
 
 ---
 
@@ -60,4 +60,3 @@ Wilma does not use hardcoded "if/else" logic to guess inventory needs.
 4. **Inference:** The trained weights are saved to the browser's IndexedDB. Live inventory data is run through the neural network to output continuous predictions for restock requirements, applying an intelligent safety factor to account for statistical noise.
 
 ---
-*Created for CCS112*
