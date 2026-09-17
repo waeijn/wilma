@@ -1,0 +1,16 @@
+{
+  "name": "wilma-root",
+  "version": "1.0.0",
+  "description": "Root package for managing the Wilma fullstack application via Docker",
+  "private": true,
+  "scripts": {
+    "start": "docker-compose up",
+    "start:detached": "docker-compose up -d",
+    "start:build": "docker-compose up --build",
+    "stop": "docker-compose down",
+    "composer:install": "docker exec wilma-api-server composer install",
+    "seed": "docker exec wilma-api-server php artisan db:seed",
+    "migrate": "docker exec wilma-api-server php artisan migrate",
+    "migrate:fresh": "docker exec wilma-api-server php artisan migrate:fresh --seed"
+  }
+}
